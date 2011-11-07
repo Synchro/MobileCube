@@ -1,7 +1,8 @@
-MobileCube
+# MobileCube
+
 Version 3.1.0 beta
 
-MobileCube is a skin for the [RoundCube](http://roundcube.net/) PHP web mail app styled after Apple's MobileMe web mail client. It was developed by [PhireWare](http://phireware.com/) as a [SourceForge project](http://sourceforge.net/projects/mobilecube/).
+**MobileCube** is a skin for the [RoundCube](http://roundcube.net/) PHP web mail app styled after Apple's MobileMe web mail client. It was developed by [PhireWare](http://phireware.com/) as a [SourceForge project](http://sourceforge.net/projects/mobilecube/).
 
 The author has apparently given up development on this theme in favour of [CrystalMail](http://www.crystalmail.net/), which is itself now dormant. SourceForge isn't a good venue for a project with an absent maintainer, so I created this fork from the last version posted on there.
 
@@ -11,9 +12,7 @@ The beta release this was forked from has some problems, some of which are descr
 
 Please fork and request pulls so we can keep this lovely theme alive!
 
-Original README follows
-=======================
-
+Original README follows:
 ```
 Installing:
 Unarchive the MobileCube.zip file and place it in the /skins/ directory.

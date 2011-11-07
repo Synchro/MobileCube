@@ -14,6 +14,7 @@ Please fork and request pulls so we can keep this lovely theme alive!
 Original README follows
 =======================
 
+```
 Installing:
 Unarchive the MobileCube.zip file and place it in the /skins/ directory.
 
@@ -31,3 +32,4 @@ $rcmail_config['default_imap_folders'] = array('INBOX', 'Drafts', 'Sent', 'Trash
 $rcmail_config['skin_path'] = 'skins/MobileCube/';
 
 $rcmail_config['preview_pane'] = TRUE;
+```

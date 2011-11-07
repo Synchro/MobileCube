@@ -1,0 +1,710 @@
+html,body {
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	color: #000000;
+	font-family: "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+
+th
+{
+  font-weight: normal;
+}
+
+h3
+{
+  font-family: "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+  font-size: 18px;
+  color: #000000;
+}
+
+a, a:active, a:visited
+{
+	color: #1C4FAD;
+	cursor: pointer;
+	outline: none;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Helvetica,Arial,sans-serif;
+	text-decoration: none;
+}
+
+a.button, a.button:visited, a.tab, a.tab:visited, a.axislist
+{
+  color: #000000;
+  text-decoration: none;
+}
+
+a.tab
+{
+  width: 80px;
+  display: block;
+  text-align: center;
+}
+
+hr
+{
+  height: 1px;
+  background-color: #666666;
+  border-style: none;
+}
+
+input, textarea {
+	font-size: 13px;
+	font-family: Helvetica,Arial,sans;
+	padding: 1px;
+	padding-left: 2px;
+	color: #333333;
+	border-top: 1px solid #abadb3;
+	border-left: 1px solid #e2e3ea;
+	border-bottom: 1px solid #e3e9ef;
+	border-right: 1px solid #dbdfe6;
+}
+
+input[type="checkbox"],
+input[type="radio"]
+{
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+input.button {
+	width: 80px;
+	height: 23px;
+	font-size: 13px;
+	font-family: Helvetica,Arial,sans-serif;
+	font-style: normal !important;
+	font-variant: normal !important;
+	font-weight: normal !important;
+	line-height: 18px;
+	white-space: nowrap;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+	text-align: center;
+	overflow: visible;
+	color: #000000;
+	background: transparent url("images/buttons/button.png") no-repeat top left;
+	border: none;
+	cursor: default;
+	padding: 3px 0px 7px 0px;
+	margin-bottom: 2px;
+}
+
+input.button:hover {
+	background: transparent url("images/buttons/button_press.png") no-repeat bottom left;
+}
+
+img
+{
+  behavior: url('skins/mobileme/pngbehavior.htc');
+  border: 0;
+}
+
+.alttext
+{
+  font-size: 11px;
+}
+
+.hint
+{
+  color: #666;
+  font-size: 11px;
+}
+
+/** common user interface objects */
+
+#taskbar {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 43px;
+	background: transparent url("images/bg.png") top left repeat-x;
+	text-align: left;
+	white-space: nowrap;
+	z-index: 2;
+}
+
+#taskbar .left {
+	float: left;
+}
+
+#taskbar .left a {
+	width: 32px;
+	height: 36px;
+	overflow: hidden;
+	color: transparent;
+	font-size: 0px;
+	display: block;
+	float: left;
+}
+
+#taskbar .left a.button-mail {
+	background: transparent url("images/buttons/mail.png") top left no-repeat;
+	margin: 6px 0px 0px 7px;
+}
+
+#taskbar .left a.button-mail:hover {
+	background: transparent url("images/buttons/mail_hover.png") top left no-repeat;
+}
+
+#taskbar .left a.button-addressbook {
+	background: transparent url("images/buttons/addressbook.png") top left no-repeat;
+	margin: 6px 0px 0px 8px;
+}
+
+#taskbar .left a.button-addressbook:hover {
+	background: transparent url("images/buttons/addressbook_hover.png") top left no-repeat;
+}
+
+#taskbar .left a.button-calendar {
+	background: transparent url("images/buttons/cal.png") top left no-repeat;
+	margin: 6px 0px 0px 8px;
+}
+
+#taskbar .left a.button-calendar:hover {
+	background: transparent url("images/buttons/cal_hover.png") top left no-repeat;
+}
+
+#taskbar .left a.button-settings {
+	background: transparent url("images/buttons/settings.png") top left no-repeat;
+	margin: 6px 0px 0px 7px;
+}
+
+#taskbar .left a.button-settings:hover {
+	background: transparent url("images/buttons/settings_hover.png") top left no-repeat;
+}
+
+#taskbar .center {
+	width: 500px;
+	height: 33px;
+	margin: 0px auto;
+	text-align: center;
+	padding-top: 10px;
+	padding-left: 0px;
+}
+
+#taskbar .center a {
+	cursor: default;
+	color: transparent;
+}
+
+#taskbar .right {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#taskbar .right a {
+	width: 35px;
+	height: 43px;
+	overflow: hidden;
+	color: transparent;
+	font-size: 0px;
+	display: block;
+}
+
+#taskbar .right a.button-logout {
+	background: transparent url("images/buttons/logout.png") top left no-repeat;
+}
+
+#taskbar .right a.button-logout:hover {
+	background: transparent url("images/buttons/logout_hover.png") top left no-repeat;
+}
+
+/***** mac-style quicksearch field *****/
+
+#searchfilter
+{
+  white-space: nowrap;
+  position: absolute;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  right: 150px;
+  vertical-align: middle;
+}
+
+#searchfilter label
+{
+  color: #F9F9F9;
+  font-size: 11px;
+}
+
+#quicksearchbar {
+	position: absolute;
+	top: 10px;
+	right: 45px;
+	width: 141px;
+	height: 23px;
+	text-align: right;
+	background: transparent url("images/searchfield.png") top left no-repeat;
+}
+
+#searchreset
+{
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  text-decoration: none;
+}
+
+#searchmod
+{
+ position: absolute;
+ top: 3px;
+ right: 116px;
+}
+
+#quicksearchbar img {
+	vertical-align: middle;
+	padding-top: 2px;
+	padding-right: 2px;
+}
+
+#quicksearchbox {
+	position: absolute;
+	top: 2px;
+	bottom: 2px;
+	left: 25px;
+	width: 94px;
+	height: 16px;
+	text-align: left;
+	border: none;
+	color: #B0B3B5;
+	font-size: 13px;
+	font-family: Helvetica,Arial,Verdana,sans-serif;
+	line-height: 16px;
+	margin: 0pt;
+	outline-color: -moz-use-text-color;
+	outline-style: none;
+	outline-width: medium;
+	text-shadow: 0px 1px 1px #323232;
+	background-color: transparent;
+}
+
+#abookquicksearchbox {
+	position: absolute;
+	top: 2px;
+	bottom: 2px;
+	left: 20px;
+	width: 97px;
+	height: 16px;
+	text-align: left;
+	border: none;
+	color: #B0B3B5;
+	font-size: 13px;
+	font-family: Helvetica,Arial,Verdana,sans-serif;
+	line-height: 16px;
+	margin: 0pt;
+	outline-color: -moz-use-text-color;
+	outline-style: none;
+	outline-width: medium;
+	text-shadow: 0px 1px 1px #323232;
+	background-color: transparent;
+}
+
+#message {
+	position: absolute;	
+	left: 76px;
+	bottom: 0px;
+	width: 131px;
+	height: 33px;
+	overflow: hidden;
+	display: none;
+	z-index: 5000;
+}
+
+#message div.notice {
+	height: 32px;
+	padding: 5px 0px 0px 38px;
+	font-size: 9px;
+}
+
+#message div.notice,
+#remote-objects-message {
+	background: url("images/display/info.png") 6px 3px no-repeat;
+}
+
+#message div.error,
+#message div.warning {
+	padding: 5px 0px 0px 5px;
+	font-size: 9px;
+	background: url("images/display/warning.png") 6px 3px no-repeat;
+}
+
+#message div.confirmation {
+	padding: 5px 0px 0px 5px;
+	font-size: 9px;
+	background: url("images/display/confirm.png") 6px 3px no-repeat;
+}
+
+#message div.loading {
+	padding: 5px 0px 20px 5px;
+	font-size: 9px;
+	background: url("images/display/loading.gif") 109px 8px no-repeat;
+}
+
+/*.splitter
+{
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  height: 8px;
+  position: absolute;
+  background: url(images/dimple.png) center no-repeat;
+  background-color: #dfe1e3;
+}*/
+
+.splitter {
+	user-select: none;
+  	-moz-user-select: none;
+  	-khtml-user-select: none;
+	position: absolute;
+}
+
+.splitter-h
+{
+  cursor: row-resize;
+  background: transparent url("images/border_horizontal.png") top left repeat-x;
+}
+
+.splitter-v
+{
+  cursor: col-resize;
+  background: transparent url("images/border_vertical.png") top left repeat-y;
+  border-right: 0px solid #bcc2c7;
+}
+
+.radios-left label
+{
+  padding-left: 0.3em;
+}
+
+/***** common table settings ******/
+
+table.records-table thead tr td {
+	height: 19px;
+	background: transparent url("images/bggray.png") top left repeat-x;
+	color: #677482;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Helvetica,Arial,sans-serif;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8);
+	padding: 1px 0px 0px 12px;
+	cursor: default;
+}
+
+table.records-table tbody tr td
+{
+  height: 16px;
+  padding: 2px 4px 2px 4px;
+  font-size: 11px;
+  white-space: nowrap;
+  border-bottom: 1px solid #EBEBEB;
+  overflow: hidden;
+  text-align: left;  
+}
+
+table.records-table tr
+{
+  background-color: #FFFFFF;
+}
+
+table.records-table tr.selected td
+{
+  color: #FFFFFF;
+  background-color: #778da8;
+}
+
+table.records-table tr.focused td
+{
+}
+
+table.records-table tr.unfocused td
+{
+  color: #FFFFFF;
+  background-color: #929292;
+}
+
+/***** roundcube webmail pre-defined classes *****/
+
+#rcversion
+{
+  position: absolute;
+  top: 67px;
+  left: 20px;
+  width: 160px;
+  text-align: center;
+
+  font-weight: normal;
+  font-size: x-small;
+  font-variant: small-caps;
+  
+  color: #999999;
+  border: 1px solid #308014;
+  background-color: #b4eeb4;
+}
+
+#rcmdraglayer
+{
+  min-width: 300px;
+  width: auto !important;
+  width: 300px;
+  border: 1px solid #999999;
+  background-color: #F9F9F9;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 11px;
+  white-space: nowrap;
+  opacity: 0.7;
+}
+
+a.rcmContactAddress
+{
+  text-decoration: none;
+}
+
+a.rcmContactAddress:hover
+{
+  text-decoration: underline;
+}
+
+#rcmKSearchpane
+{
+  background-color: #F9F9F9;
+  border: 1px solid #CCCCCC;
+}
+
+#rcmKSearchpane ul
+{
+  margin: 0px;
+  padding: 2px;
+  list-style-image: none;
+  list-style-type: none;
+}
+
+#rcmKSearchpane ul li
+{
+  height: 16px;
+  font-size: 11px;
+  padding-left: 8px;
+  padding-top: 2px;
+  padding-right: 8px;
+  white-space: nowrap;  
+}
+
+#rcmKSearchpane ul li.selected
+{
+  color: #ffffff;
+  background-color: #778da8;
+}
+
+#messagetoolbar1 a {
+	width: 48px;
+	height: 21px;
+	background: transparent url("images/buttons/buttonbg.png") top left no-repeat;
+	display: block;
+	float: left;
+	padding-top: 3px;
+}
+
+#messagetoolbar2 a {
+	width: 44px;
+	height: 21px;
+	background: transparent url("images/buttons/buttonbgleft.png") top left no-repeat;
+	display: block;
+	float: left;
+	padding-top: 3px;
+	margin-left: 10px;
+	padding-left: 1px;
+}
+
+#messagetoolbar3 a {
+	width: 41px;
+	height: 21px;
+	background: transparent url("images/buttons/buttonbgcenter.png") top left no-repeat;
+	display: block;
+	float: left;
+	padding-top: 3px;
+	padding-right: 1px;
+}
+
+#messagetoolbar4 a {
+	width: 47px;
+	height: 21px;
+	background: transparent url("images/buttons/buttonbgright.png") top left no-repeat;
+	display: block;
+	float: left;
+	padding-top: 3px;
+	padding-right: 1px;
+}
+
+#messagetoolbar5 a {
+	width: 44px;
+	height: 21px;
+	background: transparent url("images/buttons/buttonbgleft.png") top left no-repeat;
+	display: block;
+	float: left;
+	padding-top: 3px;
+	margin-left: 10px;
+	padding-left: 1px;
+}
+
+#messagetoolbar6 a {
+	width: 41px;
+	height: 21px;
+	background: transparent url("images/buttons/buttonbgcenter.png") top left no-repeat;
+	display: block;
+	float: left;
+	padding-top: 3px;
+	padding-right: 1px;
+}
+
+#messagetoolbar7 a {
+	width: 47px;
+	height: 21px;
+	background: transparent url("images/buttons/buttonbgright.png") top left no-repeat;
+	display: block;
+	float: left;
+	padding-top: 3px;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+#messagetoolbar8 a {
+	width: 48px;
+	height: 21px;
+	background: transparent url("images/buttons/buttonbg.png") top left no-repeat;
+	display: block;
+	float: left;
+	padding-top: 3px;
+	padding-left: 2px;
+	margin-left: 9px;
+}
+
+#messagetoolbar9 a {
+	width: 48px;
+	height: 21px;
+	background: transparent url("images/buttons/buttonbg.png") top left no-repeat;
+	display: block;
+	float: left;
+	padding-top: 3px;
+	padding-left: 2px;
+	margin-left: 9px;
+}
+
+ul.toolbarmenu
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.toolbarmenu li
+{
+  font-size: 11px;
+  white-space: nowrap;
+  min-width: 130px;
+}
+
+ul.toolbarmenu li a
+{
+  display: block;
+  color: #a0a0a0;
+  padding: 2px 8px 3px 22px;
+  text-decoration: none;
+  min-height: 14px;
+}
+
+ul.toolbarmenu li a.active,
+ul.toolbarmenu li a.active:active,
+ul.toolbarmenu li a.active:visited
+{
+  color: #333;
+}
+
+ul.toolbarmenu li input
+{
+  vertical-align: middle;
+}
+
+ul.toolbarmenu li hr
+{
+  color: #ccc;
+  width: 130px;
+  height: 1px;
+  margin: 2px 1px 2px 1px;
+}
+
+ul.toolbarmenu li img
+{
+  float: left;
+  margin: 0 2px;
+}
+
+ul.toolbarmenu li.separator_below
+{
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2px;
+  padding-bottom: 2px;
+}
+
+ul.toolbarmenu li.separator_above
+{
+  border-top: 1px solid #ccc;
+  margin-top: 2px;
+  padding-top: 2px;
+}
+
+.pagenav a.button,
+.pagenav a.buttonPas
+{
+  display: block;
+  float: left;
+  width: 11px;
+  height: 11px;
+  padding-left: 0;
+  margin: 1px;
+  overflow: hidden;
+  background: url('images/pagenav.gif') 0 0 no-repeat transparent;
+  opacity: 0.99; /* this is needed to make buttons appear correctly in Chrome */
+}
+
+.pagenav a.buttonPas {
+  opacity: 0.35;
+}
+
+.pagenav a.firstpageSel {
+  background-position: 0 -11px;
+}
+
+.pagenav a.prevpage {
+  background-position: -11px 0;
+}
+
+.pagenav a.prevpageSel {
+  background-position: -11px -11px;
+}
+
+.pagenav a.nextpage {
+  background-position: -22px 0;
+}
+
+.pagenav a.nextpageSel {
+  background-position: -22px -11px;
+}
+
+.pagenav a.lastpage {
+  background-position: -33px 0;
+}
+
+.pagenav a.lastpageSel {
+  background-position: -33px -11px;
+}
+

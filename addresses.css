@@ -1,0 +1,403 @@
+#abooktaskbar {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 43px;
+	background: transparent url("images/bg.png") top left repeat-x;
+	text-align: left;
+	white-space: nowrap;
+	z-index: 2;
+}
+
+#abooktaskbar .left {
+	float: left;
+}
+
+#abooktaskbar .left a {
+	width: 32px;
+	height: 36px;
+	overflow: hidden;
+	color: transparent;
+	font-size: 0px;
+	display: block;
+	float: left;
+}
+
+#abooktaskbar .left a.button-mail {
+	background: transparent url("images/buttons/mail.png") top left no-repeat;
+	margin: 6px 0px 0px 7px;
+}
+
+#abooktaskbar .left a.button-mail:hover {
+	background: transparent url("images/buttons/mail_hover.png") top left no-repeat;
+}
+
+#abooktaskbar .left a.button-addressbook {
+	background: transparent url("images/buttons/addressbook.png") top left no-repeat;
+	margin: 6px 0px 0px 8px;
+}
+
+#abooktaskbar .left a.button-addressbook:hover {
+	background: transparent url("images/buttons/addressbook_hover.png") top left no-repeat;
+}
+
+#abooktaskbar .left a.button-calendar {
+	background: transparent url("images/buttons/cal.png") top left no-repeat;
+	margin: 6px 0px 0px 8px;
+}
+
+#abooktaskbar .left a.button-calendar:hover {
+	background: transparent url("images/buttons/cal_hover.png") top left no-repeat;
+}
+
+#abooktaskbar .left a.button-settings {
+	background: transparent url("images/buttons/settings.png") top left no-repeat;
+	margin: 6px 0px 0px 7px;
+}
+
+#abooktaskbar .left a.button-settings:hover {
+	background: transparent url("images/buttons/settings_hover.png") top left no-repeat;
+}
+
+#abooktaskbar .center {
+	width: 250px;
+	height: 33px;
+	margin: 0px auto;
+	text-align: center;
+	padding-top: 10px;
+	padding-left: 27px;
+}
+
+#abooktaskbar .center a {
+	width: 48px;
+	height: 21px;
+	background: transparent url("images/buttons/buttonbg.png") top left no-repeat;
+	display: block;
+	float: left;
+	padding-top: 2px;
+	text-align: center;
+	cursor: default;
+	padding-right: 10px;
+	color: transparent;
+}
+
+#abooktaskbar .right {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#abooktaskbar .right a {
+	width: 35px;
+	height: 43px;
+	overflow: hidden;
+	color: transparent;
+	font-size: 0px;
+	display: block;
+}
+
+#abooktaskbar .right a.button-logout {
+	background: transparent url("images/buttons/logout.png") top left no-repeat;
+}
+
+#abooktaskbar .right a.button-logout:hover {
+	background: transparent url("images/buttons/logout_hover.png") top left no-repeat;
+}
+
+#addresstoolbar4 a {
+	padding-left: 2px;
+}
+
+/** groupbox list styles */
+
+#grouplist-container {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 209px;
+	height: 100%;
+	border-right: 1px solid #bcc2c7;
+	background-color: #dfe1e3;
+	overflow: auto;
+}
+
+#groupboxlist {
+	margin: 43px 0px 0px 0px;
+	padding: 0px;
+	list-style: none;
+	white-space: nowrap;
+}
+
+#groupboxlist li  {
+	height: 32px;
+	border-top: 1px solid #e9eaeb;
+	border-bottom: 1px solid #c7ccd1;
+}
+
+#groupboxlist li a {
+	height: 22px;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+	font-family: Helvetica,Arial,sans-serif;
+	color: #40474D;
+	padding-left: 37px;
+	padding-top: 9px;
+	text-decoration: none;
+	cursor: default;
+	background: transparent url("images/icons/contacts.png") 13px 7px no-repeat;
+}
+
+#groupboxlist li.unread {
+	font-weight: bold;
+}
+
+#groupboxlist li.selected,
+#groupboxlist li.droptarget li.selected {
+	background: #778da8 url("images/listselected.png") top left repeat-x;
+	border-top: 1px solid #87929c;
+	border-bottom: 1px solid #677482;
+}
+
+#groupboxlist li.selected > a,
+#groupboxlist li.droptarget li.selected a
+{
+  color: #FFF;
+  font-weight: bold;
+}
+
+#groupboxlist li.droptarget {
+	background-color: #c5d4e4;
+}
+
+/* styles for nested folders */
+#groupboxlist ul {
+	margin: 0px;
+	padding: 2px 0px 0px 15px;
+	list-style: none;
+	white-space: nowrap;
+	background-position: 25px 0px;
+}
+
+#groupboxcontrols {
+	position: absolute;
+	left: 0px;
+	width: 209px;
+	bottom: 0px;
+	height: 33px;
+	overflow: hidden;
+	border-top: 1px solid #bcc2c7;
+}
+
+#groupboxcontrols a {
+	width: 37px;
+	height: 32px;
+	display: block;
+	overflow: hidden;
+	border-top: 1px solid #e9eaeb;
+	border-left: 1px solid #bcc2c7;
+	border-right: 1px solid #e9eaeb;
+	color: transparent;
+	float: left;
+}
+
+#groupboxcontrols a {
+	width: 36px;
+	background: transparent url("images/icons/compact.png") 12px 10px no-repeat;
+	border-left: 0px solid transparent;
+}
+
+#groupboxcontrols a img {
+	display: none;
+}
+
+#groupboxcontrols #rcmcountdisplay {
+	width: 162px;
+	height: 33px;
+	border-top: 1px solid #e9eaeb;
+	border-left: 1px solid #bcc2c7;
+	color: #677482;
+	font-size: 11px;
+	font-weight: bold;
+	font-family: Helvetica,Arial,sans-serif;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8);
+	display: block;
+	margin: 0px 0px 0px 37px;
+	padding: 9px 0px 0px 9px;
+}
+
+#addresslist-container {
+	position: absolute;
+	top: 43px;
+	left: 210px;
+	bottom: 11px;
+	width: 255px;
+	height: auto;
+	background-color: #ffffff;
+	overflow: auto;
+}
+
+#addresslist {
+	margin: 0px 0px 0px 0px;
+}
+
+#contacts-table {
+	width: 100%;
+	table-layout: fixed;
+}
+
+#contacts-table thead tr td {
+	height: 19px;
+	background: transparent url("images/bggray.png") top left repeat-x;
+	color: #677482;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Helvetica,Arial,sans-serif;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8);
+	padding: 1px 0px 0px 12px;
+	cursor: default;
+}
+
+#contacts-table tbody tr {
+	height: 20px;
+
+}
+
+#contacts-table tbody tr td {
+	height: 16px;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Helvetica,Arial,sans-serif;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+	line-height: 19px;
+	white-space: nowrap;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	overflow: hidden;
+	text-align: left;
+	padding: 0px 0px 0px 32px;
+	background: transparent url("images/icons/card.png") 10px 3px no-repeat;
+	cursor: default;
+}
+
+#contacts-table tr.selected td {
+	color: #ffffff;
+	background-color: #778da8;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+#contacts-table tr.unfocused td {
+	color: #000000;
+	background-color: #e9e9e9;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+#contacts-box {
+	position: absolute;
+	top: 43px;
+	left: 465px;
+	right: 0px;
+	bottom: 0px;
+	background-color: #f2f2f2;
+	overflow: hidden;
+}
+
+#contact-frame {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+body.iframe {
+	background-color: #f2f2f2;
+	line-height: 18px;
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+#contact-title {
+	width: 500px;
+	height: 81px;
+	background: transparent url("images/detail_header_thumbnail.png") 86px 40px no-repeat;
+	padding: 46px 0px 0px 143px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #333333;
+	word-spacing: 4px;
+}
+
+#contact-details {
+	width: 543px;
+}
+
+#contact-details table {
+	width: 543px;
+	padding-left: 53px;
+}
+
+#contact-details table tbody tr {
+	width: 543px;
+	height: 49px;
+}
+
+#contact-details table tbody tr td {
+	vertical-align: top;
+	color: #333333;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Helvetica,Arial,sans-serif;
+	padding: 5px 0px 0px 12px;
+	background: transparent url("images/rounded.png") top left no-repeat;
+
+}
+
+#contact-details table tbody tr td.title {
+	width: 85px;
+	color: #808080;
+	font-size: 13px;
+	font-weight: normal;
+	font-family: Helvetica,Arial,sans-serif;
+	text-align: right;
+	padding: 5px 5px 0px 0px;
+	background: transparent url("images/roundedsm.png") top left no-repeat;
+}
+
+#contact-details table tbody tr td input, textarea {
+	width: 385px;
+	height: 16px;
+	-moz-border-left-colors:#F9F9F9 rgb(171, 171, 171);
+	-moz-border-bottom-colors:#F9F9F9 rgb(206, 206, 206);
+	-moz-border-right-colors:#F9F9F9 rgb(171, 171, 171);
+	-moz-border-top-colors:#F9F9F9 rgb(112, 112, 112);
+	border-width: 2px;
+	margin-top: -5px;
+	padding: 6px 3px 1px;
+	color: #333333;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+#contact-details input.button {
+	float: right;
+	margin-left: 5px;
+	margin-right: 3px;
+}
+#abookcountbar
+{
+  position: absolute;
+  bottom: 16px;
+  left: 209px;
+  width: auto;
+  height: 20px;
+  text-align: center;
+}
+
+#abookcountbar span
+{
+  font-size: 11px;
+  color: #333333;
+}

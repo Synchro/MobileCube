@@ -1,0 +1,104 @@
+<div id="taskbar">
+
+	<div class="left">
+
+		<roundcube:button command="mail" label="mail" class="button-mail" title="mail" />
+
+		<roundcube:button command="addressbook" label="addressbook" class="button-addressbook" title="addressbook" />
+		
+		<roundcube:container name="taskbar" id="taskbar" />
+
+		<roundcube:button command="settings" label="settings" class="button-settings" title="settings" />
+
+	</div>
+
+	<div class="center">
+
+		<div id="messagetoolbar1">
+
+			<roundcube:button command="delete" imageSel="/images/buttons/delete_sel.png" imageAct="/images/buttons/delete_act.png" imagePas="/images/buttons/delete_pas.png" width="16" height="16" title="deletemessage" />
+
+		</div>
+
+		<div id="messagetoolbar2">
+
+			<roundcube:button command="reply" imageSel="/images/buttons/reply_sel.png" imageAct="/images/buttons/reply_act.png" imagePas="/images/buttons/reply_pas.png" width="20" height="16" title="replytomessage" />
+
+		</div>
+
+		<div id="messagetoolbar3">
+
+			<roundcube:button command="reply-all" imageSel="/images/buttons/replyall_sel.png" imageAct="/images/buttons/replyall_act.png" imagePas="/images/buttons/replyall_pas.png" width="25" height="16" title="replytoallmessage" />
+
+		</div>
+
+		<div id="messagetoolbar4">
+
+			<roundcube:button command="forward" imageSel="/images/buttons/forward_sel.png" imageAct="/images/buttons/forward_act.png" imagePas="/images/buttons/forward_pas.png" width="18" height="16" title="forwardmessage" />
+
+		</div>
+
+		<div id="messagetoolbar5">
+
+			<roundcube:button command="checkmail" imageSel="/images/buttons/inbox_sel.png" imageAct="/images/buttons/inbox_act.png" imagePas="/images/buttons/inbox_pas.png" width="16" height="16" title="checkmail" />
+
+		</div>
+
+		<div id="messagetoolbar6">
+
+			<roundcube:button command="compose" imageSel="/images/buttons/compose_sel.png" imageAct="/images/buttons/compose_act.png" imagePas="/images/buttons/compose_pas.png" width="16" height="16" title="writenewmessage" />
+
+		</div>
+
+		<div id="messagetoolbar7">
+		
+		<roundcube:button command="print" imageSel="/images/buttons/print_sel.png" imageAct="/images/buttons/print_act.png" imagePas="/images/buttons/print_pas.png" width="16" height="16" title="printmessage" />
+
+		</div>
+		<div id="messagetoolbar8">
+		<roundcube:button name="markreadbutton" id="markreadbutton" title="markmessages" onclick="rcmail_ui.show_markmenu();return false" imageSel="/images/buttons/source_sel.png" imageAct="/images/buttons/source_sel.png" imagePas="/images/buttons/source_sel.png" width="27" height="16" />
+		</div>
+		<div id="messagetoolbar9">
+			<roundcube:button name="messagemenulink" id="messagemenulink" title="messageactions" onclick="rcmail_ui.show_messagemenu();return false" imageSel="/images/buttons/source_sel.png" imageAct="/images/buttons/source_sel.png" imagePas="/images/buttons/source_sel.png" width="27" height="16" />
+		</div>
+
+<div id="markmessagemenu">
+  <ul class="toolbarmenu">
+    <li><roundcube:button command="mark" prop="read" label="markread" classAct="readlink active" class="readlink" /></li>
+    <li><roundcube:button command="mark" prop="unread" label="markunread" classAct="unreadlink active" class="unreadlink" /></li>
+    <li><roundcube:button command="mark" prop="flagged" label="markflagged" classAct="flaggedlink active" class="flaggedlink" /></li>
+    <li><roundcube:button command="mark" prop="unflagged" label="markunflagged" classAct="unflaggedlink active" class="unflaggedlink" /></li>
+    <roundcube:container name="markmenu" id="markmessagemenu" />
+  </ul>
+</div>
+
+<roundcube:include file="/includes/messagemenu.html" />
+
+	</div>
+
+	<div class="right">
+
+		<div id="quicksearchbar">
+			<div id="searchfilter">
+  				<roundcube:object name="searchfilter" class="searchfilter" />
+			</div>
+			<roundcube:button name="searchmod" id="searchmod" image="/images/icons/glass_roll.png" onclick="rcmail_ui.show_searchmenu();return false" title="searchmod" />
+			<roundcube:object name="searchform" type="none" value="" results="5" id="quicksearchbox" style="color: #B0B3B5;" onfocus="this.style.color='#F0F0F0';if(this.value=='Search')this.value='';" onblur="if(this.value==''){this.value='Search';this.style.color='#B0B3B5';}" />
+			<roundcube:button command="reset-search" id="searchreset" image="/images/icons/reset.png" title="resetsearch" />
+		</div>
+
+		<roundcube:button command="logout" label="logout" class="button-logout" title="logout" />
+
+	</div>
+
+</div>
+<div id="searchmenu">
+  <ul class="toolbarmenu">
+    <li><input type="checkbox" name="s_mods[]" value="subject" id="s_mod_subject" onclick="rcmail_ui.set_searchmod(this)" /><label for="s_mod_subject"><roundcube:label name="subject" /></label></li>
+    <li><input type="checkbox" name="s_mods[]" value="from" id="s_mod_from" onclick="rcmail_ui.set_searchmod(this)" /><label for="s_mod_from"><roundcube:label name="from" /></label></li>
+    <li><input type="checkbox" name="s_mods[]" value="to" id="s_mod_to" onclick="rcmail_ui.set_searchmod(this)" /><label for="s_mod_to"><roundcube:label name="to" /></label></li>
+    <li><input type="checkbox" name="s_mods[]" value="cc" id="s_mod_cc" onclick="rcmail_ui.set_searchmod(this)" /><label for="s_mod_cc"><roundcube:label name="cc" /></label></li>
+    <li><input type="checkbox" name="s_mods[]" value="bcc" id="s_mod_bcc" onclick="rcmail_ui.set_searchmod(this)" /><label for="s_mod_bcc"><roundcube:label name="bcc" /></label></li>
+    <li><input type="checkbox" name="s_mods[]" value="text" id="s_mod_text" onclick="rcmail_ui.set_searchmod(this)" /><label for="s_mod_text"><roundcube:label name="msgtext" /></label></li>
+  </ul>
+</div>

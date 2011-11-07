@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title><roundcube:object name="pagetitle" /></title>
+		<roundcube:include file="/includes/links.html" />
+		<link rel="stylesheet" type="text/css" href="/settings.css" />
+	</head>
+	<body>
+		<div id="taskbar">
+			<div class="left">
+				<roundcube:button command="mail" label="mail" class="button-mail" title="mail" />
+				<roundcube:button command="addressbook" label="addressbook" class="button-addressbook" title="addressbook" />
+				<roundcube:container name="taskbar" id="taskbar" />
+				<roundcube:button command="settings" label="settings" class="button-settings" title="settings" />
+			</div>
+			<div class="center">
+			</div>
+			<div class="right">
+				<roundcube:button command="logout" label="logout" class="button-logout" title="logout" />
+			</div>
+		</div>
+
+		<div id="settingslist-container">
+			<ul id="settingslist">
+				<li class="preferences"><roundcube:button command="preferences" type="link" label="preferences" /></li>
+				<li class="identities selected"><roundcube:button command="identities" type="link" label="identities" class="tablink" /></li>
+				<li class="folders"><roundcube:button command="folders" type="link" label="folders" class="tablink" /></li>
+				<roundcube:container name="tabs" id="settingslist" />
+				<script type="text/javascript"> if (window.rcmail) rcmail.add_onload(rcube_init_settings_tabs); </script>
+			</ul>
+		</div>
+
+		<div id="identities-list">
+			<div class="identities-title"><roundcube:label name="identities" /></div>
+
+			<roundcube:object name="identitiesList" id="identities-table" class="records-table" cellspacing="0" cellpadding="0" summary="Identities list" editIcon="" />
+			<roundcube:button command="add" type="input" label="newidentity" class="button" />
+		</div>
+		<div id="rightbar">
+	<div class="rightbar-content">
+		<h1>Questions?</h1>
+
+		<div class="links">
+			<ul>
+				<li><a href="http://trac.roundcube.net/wiki" title="" target="_blank">Find a Help topic</a></li>
+				<li><a href="http://roundcubeforum.net/" title="" target="_blank">Join a discussion</a></li>
+				<li><a href="http://roundcube.net/support" title="" target="_blank">Contact Support</a></li>
+			</ul>
+		</div>
+		<div class="borderline"></div>
+</div>	
+		<center><br><img src="/images/mobileme_logo2.png"><br><br>You Have Version:<br>3.1.0</center><br>
+		<center><iframe width="220" height="250" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" src="http://phireware.com/roundcube/mobilecube/frame/"></iframe></center>
+
+	</div>
+</div>
+
+	</body>
+</html>

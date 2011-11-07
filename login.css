@@ -1,0 +1,223 @@
+html > body .canvas {
+	height: auto;
+}
+
+.canvas {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: transparent url("images/loginbg.png") center center;
+	z-index: 1;
+}
+
+table.bg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 2;
+	background: transparent url("images/login/login.jpg") center center no-repeat;
+
+	padding-bottom: 93px;
+}
+
+#mobileme-logo {
+	position: absolute;
+	top: 27px;
+	left: 29px;
+	z-index: 3;
+}
+
+#apple-logo {
+	position: absolute;
+	top: 27px;
+	right: 29px;
+	z-index: 3;
+}
+
+#copyright {
+	position: absolute;
+	left: 35px;
+	bottom: 22px;
+	z-index: 3;
+	color: #95989B;
+	font-size: 11px;
+	font-family: Helvetica,Arial,Sans-Serif;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+}
+
+#options {
+	position: absolute;
+	right: 15px;
+	bottom: 22px;
+	z-index: 3;
+}
+
+#options a {
+	color: #eeeeee;
+	font-size: 11px;
+	font-family: Helvetica,Arial,Sans-Serif;
+	font-weight: normal;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+	padding-right: 20px;
+}
+
+#options a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+#loginfield {
+	width: 238px;
+	overflow: hidden;
+	text-align: left;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+#loginfield .login-title {
+	font-size: 15px;
+	font-weight: bold;
+	font-family: Helvetica,Arial,sans-serif;
+	margin-left: 3px;
+}
+
+#loginfield table {
+	padding: 0px;
+	margin: 0px;
+}
+
+#loginfield table tbody tr td.title {
+	display: none;
+}
+
+#loginfield input {
+	width: 217px;
+	color: #808080;
+	font-size: 13px;
+	-moz-border-bottom-colors:#F9F9F9 rgb(206, 206, 206);
+	-moz-border-left-colors:#F9F9F9 rgb(171, 171, 171);
+	-moz-border-right-colors:#F9F9F9 rgb(171, 171, 171);
+	-moz-border-top-colors:#F9F9F9 rgb(112, 112, 112);
+	border-width: 2px;
+	border-color: #707070 rgb(171, 171, 171) rgb(206, 206, 206);
+	border-style: solid;
+	margin-top: 1px;
+	padding: 4px 3px 2px;
+}
+
+#loginfield input:focus {
+	color: #000000;
+	-moz-border-bottom-colors: #B8BEC4 rgb(168, 174, 180);
+	-moz-border-left-colors: #B8BEC4 rgb(152, 158, 164);
+	-moz-border-right-colors: #B8BEC4 rgb(152, 158, 164);
+	-moz-border-top-colors: #9CA5AE rgb(124, 130, 136);
+	-moz-outline-radius-bottomleft: 2px;
+	-moz-outline-radius-bottomright: 2px;
+	-moz-outline-radius-topleft: 2px;
+	-moz-outline-radius-topright: 2px;
+	outline-color: #CED2D5;
+	outline-offset: 0px;
+	outline-style: solid;
+	outline-width: 1px;
+	background-color: #FEFEEE;
+}
+
+#loginfield input.button {
+	width: 80px;
+	height: 23px;
+	font-size: 13px;
+	font-family: Helvetica,Arial,sans-serif;
+	font-style: normal !important;
+	font-variant: normal !important;
+	font-weight: normal !important;
+	line-height: 18px;
+	white-space: nowrap;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+	text-align: center;
+	overflow: visible;
+	color: #000000;
+	background: transparent url("images/buttons/buttonblue.png") no-repeat top left;
+	border: none;
+	cursor: default;
+	padding: 3px 0px 7px 0px;
+	margin-right: 10px;
+	margin-bottom: 2px;
+}
+
+#loginfield input.button:hover {
+	background: transparent url("images/buttons/buttonblue_press.png") no-repeat bottom left;
+	cursor: pointer;
+}
+
+#loginfield #loginmessage {
+	height: 14px;
+	color: #AD0000;
+	font-size: 11px;
+	font-weight: bold;
+	font-family: Helvetica,Arial,sans-serif;
+	margin: 2px 0px 0px 3px;
+}
+
+#loginfield #keepme {
+	float: left;
+	font-weight: normal;
+	margin: 2px 0px 9px 0px;
+}
+
+#loginfield #keepme #keepmecheck {
+	width: 14px;
+}
+
+#loginfield #keepme label {
+	margin-left: 2px;
+}
+
+#loginfield #forgot {
+	height: 79px;
+	margin: 0px 0px 0px 3px;
+}
+
+#loginfield #forgot .left {
+	float: left;
+	margin-top: 4px;
+}
+
+#loginfield #forgot .left a {
+	font-weight: normal;
+}
+
+#loginfield #forgot .right {
+	float: right;
+}
+
+#loginfield .borderline {
+	border-top: 1px solid #bfc0c3;
+	border-bottom: 1px solid #fdfefe;
+	margin: 0px 20px 8px 3px;
+	clear: both;
+}
+
+a, a:active, a:visited {
+	color: #1C4FAD;
+	font-size: 13px;
+	font-weight: normal;
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#loginfield #bottom {
+	font-weight: normal;
+	margin: 10px 20px 8px 3px;
+}
+
+#loginfield b {
+	line-height: 20px;
+}
